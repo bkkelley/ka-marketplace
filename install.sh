@@ -133,8 +133,11 @@ step "Plugins"
 if claude plugin marketplace list 2>/dev/null | grep -qi "kelleyaustin"; then
   skip "marketplace 'kelleyaustin' already added"
 else
-  claude plugin marketplace add github.com/bkkelley/ka-marketplace
-  ok "added marketplace github.com/bkkelley/ka-marketplace"
+  # HTTPS form on purpose — the bare github.com/<owner>/<repo>
+  # shorthand makes claude-code try git@github.com, which fails on a
+  # fresh Mac (no SSH host key in ~/.ssh/known_hosts).
+  claude plugin marketplace add https://github.com/bkkelley/ka-marketplace
+  ok "added marketplace https://github.com/bkkelley/ka-marketplace"
 fi
 
 # Install the plugin. Dashboard is pulled as a dependency.
