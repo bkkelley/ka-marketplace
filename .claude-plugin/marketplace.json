@@ -11,8 +11,8 @@
       "version": "1.0.0",
       "description": "A local web dashboard for any Claude Code plugin. Chat panel backed by your real claude CLI, slash autocomplete, attachments, native folder picker, in-place editor, live event feed.",
       "source": {
-        "source": "github",
-        "repo": "bkkelley/claude-code-dashboard"
+        "source": "git",
+        "url": "https://github.com/bkkelley/claude-code-dashboard.git"
       }
     },
     {
@@ -20,8 +20,8 @@
       "version": "0.2.0",
       "description": "Salesforce skill library, 60+ run-time agents, slash commands, hooks, and live-org MCP server. Search the local knowledge corpus, validate designs against a real Salesforce org, and dispatch focused run-time agents.",
       "source": {
-        "source": "github",
-        "repo": "bkkelley/ka-sfskills"
+        "source": "git",
+        "url": "https://github.com/bkkelley/ka-sfskills.git"
       }
     }
   ]
